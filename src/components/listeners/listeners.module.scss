@@ -1,0 +1,8 @@
+@import '../../styles/common/theme.module.scss';
+.root {
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
