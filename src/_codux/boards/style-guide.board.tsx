@@ -91,9 +91,7 @@ export default createBoard({
                                 )}
                             />
                         </div>
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            primary 300 <br />
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 100</div>
                     </div>
                     <div>
                         <div
@@ -102,9 +100,7 @@ export default createBoard({
                                 StyleGuide_board_module.primary200,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass2 <br />
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 200</div>
                     </div>
                     <div>
                         <div
@@ -113,16 +109,7 @@ export default createBoard({
                                 StyleGuide_board_module.primary300,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass3
-                            <br />
-                        </div>
-                    </div>
-                    <div>
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            primary
-                            <br />{' '}
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 300</div>
                     </div>
                     <div>
                         <div
@@ -131,10 +118,7 @@ export default createBoard({
                                 style['grass5'],
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass5
-                            <br />{' '}
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>white</div>
                     </div>
                     <div>
                         <div
@@ -143,10 +127,16 @@ export default createBoard({
                                 style['grassdark'],
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grassdark
-                            <br />{' '}
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>black</div>
+                    </div>
+                    <div>
+                        <div
+                            className={Classnames(
+                                StyleGuide_board_module.colorContainer,
+                                style['grassdark'],
+                            )}
+                        />
+                        <div className={StyleGuide_board_module.subtitleValue}>black</div>
                     </div>
                 </div>
                 <h2 className={StyleGuide_board_module.subSectionTitle}>Secondary / Sand</h2>
