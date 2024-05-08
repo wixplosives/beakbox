@@ -87,7 +87,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.colorContainer,
-                                    StyleGuide_board_module.primary,
+                                    StyleGuide_board_module.primary100,
                                 )}
                             />
                         </div>
@@ -99,7 +99,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                StyleGuide_board_module.primary100,
+                                StyleGuide_board_module.primary200,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>
@@ -110,7 +110,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                StyleGuide_board_module.primary200,
+                                StyleGuide_board_module.primary300,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>
