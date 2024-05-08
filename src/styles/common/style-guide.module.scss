@@ -20,52 +20,12 @@
   font: $noteText;
 }
 
-.sand1 {
-  background: $sand1;
-}
-
-.sand2 {
-  background: $sand2;
-}
-
-.sand3 {
-  background: $sand3;
-}
-
-.grass1 {
-  background: $grass1;
-}
-
-.grass2 {
-  background: $grass2;
-}
-
-.grass3 {
-  background: $grass3;
-}
-
-.grass4 {
-  background: $primary;
-}
-
-.grass5 {
-  background: $grass5;
-}
-
-.grassdark {
-  background: $grassdark;
-}
-
 .shadow100 {
-  box-shadow:
-    0px 4px 12px -4px rgba(22, 34, 51, 0.12),
-    0px 16px 32px 0px rgba(22, 34, 51, 0.16);
+  box-shadow: 0px 4px 12px -4px rgba(22, 34, 51, 0.12), 0px 16px 32px 0px rgba(22, 34, 51, 0.16);
 }
 
 .shadow200 {
-  box-shadow:
-    0px 4px 8px -4px rgba(22, 34, 51, 0.08),
-    0px 16px 24px 0px rgba(22, 34, 51, 0.08);
+  box-shadow: 0px 4px 8px -4px rgba(22, 34, 51, 0.08), 0px 16px 24px 0px rgba(22, 34, 51, 0.08);
 }
 
 .shadow300 {

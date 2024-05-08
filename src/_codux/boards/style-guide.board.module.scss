@@ -1,5 +1,6 @@
 @import '../../styles/common/variables.module.scss';
 @import '../../styles/common/theme.module.scss';
+
 .root {
 }
 
@@ -126,7 +127,6 @@
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   margin-bottom: 6px;
-  background: $primary300;
 }
 
 .shadowContainer {
@@ -163,16 +163,24 @@
   background-color: #ebeef5;
   width: 100%;
 }
-.grass2 {
-  background-color: var(--grass2);
-}
-.primary {
-  background: $primary;
-}
+
 .primary100 {
   background: $primary100;
 }
+
 .primary200 {
+  background: $primary200;
 }
+
 .primary300 {
+  background: $primary300;
+}
+.white {
+  background: $white;
+}
+.gray {
+  background-color: $gray;
+}
+.black {
+  background-color: $black;
 }
