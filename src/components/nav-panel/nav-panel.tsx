@@ -6,6 +6,7 @@ import NavbarDiscoverIcon from '../../assets/navbar-discover-icon.svg?react';
 import NavbarRadioIcon from '../../assets/navbar-radio-icon.svg?react';
 import NavbarAlbumsIcon from '../../assets/navbar-albums-icon.svg?react';
 import NavbarPodcastsIcon from '../../assets/navbar-podcasts-icon.svg?react';
+import { NavItem } from '../nav-item/nav-item';
 
 export interface NavPanelProps {
     className?: string;
@@ -19,6 +20,7 @@ export const NavPanel = ({ className }: NavPanelProps) => {
             </div>
             <div>
                 <div>
+                    <NavItem title={'Home'} />
                     <div className={classNames(styles.listItems, styles.selectedItem)}>
                         <NavbarHomeIcon className={styles.navBarIcon} />
                         Home
