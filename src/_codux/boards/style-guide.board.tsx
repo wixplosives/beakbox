@@ -115,7 +115,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grass5'],
+                                StyleGuide_board_module.white,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>white</div>
@@ -124,58 +124,19 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grassdark'],
+                                StyleGuide_board_module.gray,
+                            )}
+                        />
+                        <div className={StyleGuide_board_module.subtitleValue}>gray</div>
+                    </div>
+                    <div>
+                        <div
+                            className={Classnames(
+                                StyleGuide_board_module.colorContainer,
+                                StyleGuide_board_module.black,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>black</div>
-                    </div>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['grassdark'],
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>black</div>
-                    </div>
-                </div>
-                <h2 className={StyleGuide_board_module.subSectionTitle}>Secondary / Sand</h2>
-                <div className={StyleGuide_board_module.FlexContainer}>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand1'],
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand1
-                            <br />
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand2'],
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand2
-                            <br />
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand3'],
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand3
-                            <br />
-                        </div>
                     </div>
                 </div>
             </div>
