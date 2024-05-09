@@ -1,7 +1,7 @@
 @import '../../styles/common/theme.module.scss';
 .root {
 }
-.navBar {
+.navigation {
   width: 270px;
   height: 1024px;
   background-color: #212121;
@@ -21,7 +21,7 @@
   margin-top: 32px;
   margin-left: 32px;
 }
-.navBarIcon {
+.navigationIcon {
   margin-left: 12px;
   margin-right: 16px;
 }
