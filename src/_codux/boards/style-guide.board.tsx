@@ -81,111 +81,62 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grass1']
+                                style['grass1'],
                             )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass1
-                            <br />
+                        >
+                            <div
+                                className={Classnames(
+                                    StyleGuide_board_module.colorContainer,
+                                    StyleGuide_board_module.primary100,
+                                )}
+                            />
                         </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 100</div>
                     </div>
                     <div>
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                StyleGuide_board_module.grass2
+                                StyleGuide_board_module.primary200,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass2 <br />
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 200</div>
                     </div>
                     <div>
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grass3']
+                                StyleGuide_board_module.primary300,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass3
-                            <br />
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>primary 300</div>
                     </div>
                     <div>
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grass4']
+                                StyleGuide_board_module.white,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass4
-                            <br />{' '}
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>white</div>
                     </div>
                     <div>
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grass5']
+                                StyleGuide_board_module.gray,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grass5
-                            <br />{' '}
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>gray</div>
                     </div>
                     <div>
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.colorContainer,
-                                style['grassdark']
+                                StyleGuide_board_module.black,
                             )}
                         />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            grassdark
-                            <br />{' '}
-                        </div>
-                    </div>
-                </div>
-                <h2 className={StyleGuide_board_module.subSectionTitle}>Secondary / Sand</h2>
-                <div className={StyleGuide_board_module.FlexContainer}>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand1']
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand1
-                            <br />
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand2']
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand2
-                            <br />
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className={Classnames(
-                                StyleGuide_board_module.colorContainer,
-                                style['sand3']
-                            )}
-                        />
-                        <div className={StyleGuide_board_module.subtitleValue}>
-                            sand3
-                            <br />
-                        </div>
+                        <div className={StyleGuide_board_module.subtitleValue}>black</div>
                     </div>
                 </div>
             </div>
@@ -206,7 +157,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 style['shadow100'],
-                                StyleGuide_board_module.shadowContainer
+                                StyleGuide_board_module.shadowContainer,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>shadow100</div>
@@ -215,7 +166,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 style['shadow200'],
-                                StyleGuide_board_module.shadowContainer
+                                StyleGuide_board_module.shadowContainer,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>shadow200</div>
@@ -224,7 +175,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 style['shadow300'],
-                                StyleGuide_board_module.shadowContainer
+                                StyleGuide_board_module.shadowContainer,
                             )}
                         />
                         <div className={StyleGuide_board_module.subtitleValue}>shadow300</div>
@@ -249,7 +200,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin2']
+                                    style['margin2'],
                                 )}
                             />
                         </div>
@@ -264,7 +215,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     style['margin4'],
-                                    StyleGuide_board_module.spacingBox
+                                    StyleGuide_board_module.spacingBox,
                                 )}
                             />
                         </div>
@@ -279,7 +230,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin6']
+                                    style['margin6'],
                                 )}
                             />
                         </div>
@@ -294,7 +245,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin12']
+                                    style['margin12'],
                                 )}
                             />
                         </div>
@@ -309,7 +260,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin16']
+                                    style['margin16'],
                                 )}
                             />
                         </div>
@@ -324,7 +275,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin24']
+                                    style['margin24'],
                                 )}
                             />
                         </div>
@@ -339,7 +290,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin32']
+                                    style['margin32'],
                                 )}
                             />
                         </div>
@@ -354,7 +305,7 @@ export default createBoard({
                             <div
                                 className={Classnames(
                                     StyleGuide_board_module.spacingBox,
-                                    style['margin40']
+                                    style['margin40'],
                                 )}
                             />
                         </div>
@@ -371,7 +322,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding2']
+                                style['padding2'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -386,7 +337,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 style['padding4'],
-                                StyleGuide_board_module.paddingContainer
+                                StyleGuide_board_module.paddingContainer,
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -401,7 +352,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding6']
+                                style['padding6'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -416,7 +367,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding8']
+                                style['padding8'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -431,7 +382,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding12']
+                                style['padding12'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -446,7 +397,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding16']
+                                style['padding16'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -461,7 +412,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding24']
+                                style['padding24'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -476,7 +427,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding32']
+                                style['padding32'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
@@ -491,7 +442,7 @@ export default createBoard({
                         <div
                             className={Classnames(
                                 StyleGuide_board_module.paddingContainer,
-                                style['padding40']
+                                style['padding40'],
                             )}
                         >
                             <div className={StyleGuide_board_module.spacingBox} />
