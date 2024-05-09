@@ -12,7 +12,7 @@ export interface ListenersProps {
  */
 export const Listeners = ({ className }: ListenersProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <div className={classNames(styles.root, className, styles.listeners)}>
             <Icon />
             Listeners
         </div>
