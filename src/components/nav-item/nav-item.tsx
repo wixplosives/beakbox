@@ -1,27 +1,34 @@
 import classNames from 'classnames';
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import styles from './nav-item.module.scss';
 
 export interface NavItemProps {
+    className?: string;
     icon?: React.ReactNode;
     title: string;
     selected?: boolean;
 }
 
-export const NavItem = ({ icon: Icon, title }: NavItemProps) => {
+export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
     const [selected, setSelected] = useState(false);
 
     const handleClick = () => {
-        setSelected(!selected); 
+        setSelected(!selected);
     };
     return (
         <div
-            className={classNames(styles.listItems, {
+            className={classNames(className, {
                 [styles.selectedItem]: selected,
             })}
-            onClick={handleClick} 
+            onClick={handleClick}
         >
-            {Icon}
+            <div
+                className={classNames(styles.icon, {
+                    [styles.selectedIcon]: selected,
+                })}
+            >
+                {Icon}
+            </div>{' '}
             {title}
         </div>
     );

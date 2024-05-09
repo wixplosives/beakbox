@@ -20,32 +20,31 @@ export const Navigation = ({ className }: navigationProps) => {
                 <BeakboxlogoSvg className={styles.beakBoxLogo} />
             </div>
             <div>
-                <div>
-                    <NavItem
-                        title={'Home'}
-                        icon={<NavigationHomeIcon className={NavItem_module.navigationIcon} />}
-                    />
-                    <div className={classNames(styles.listItems, styles.selectedItem)}>
-                        <NavigationHomeIcon className={styles.navigationIcon} />
-                        Home
-                    </div>
-                    <div className={styles.listItems}>
-                        <NavigationDiscoverIcon className={styles.navigationIcon} />
-                        Discover
-                    </div>
-                    <div className={styles.listItems}>
-                        <NavigationRadioIcon className={styles.navigationIcon} />
-                        Radio
-                    </div>
-                    <div className={styles.listItems}>
-                        <NavigationAlbumsIcon className={styles.navigationIcon} />
-                        Albums
-                    </div>
-                    <div className={styles.listItems}>
-                        <NavigationPodcastsIcon className={styles.navigationIcon} />
-                        Podcasts
-                    </div>
-                </div>
+                <NavItem
+                    title={'Home'}
+                    icon={<NavigationHomeIcon className={NavItem_module.navigationIcon} />}
+                    className={NavItem_module.listItems}
+                />
+                <NavItem
+                    title={'Discover'}
+                    icon={<NavigationDiscoverIcon className={NavItem_module.navigationIcon} />}
+                    className={NavItem_module.listItems}
+                />
+                <NavItem
+                    title={'Radio'}
+                    icon={<NavigationRadioIcon className={NavItem_module.navigationIcon} />}
+                    className={NavItem_module.listItems}
+                />
+                <NavItem
+                    title={'Albums'}
+                    icon={<NavigationAlbumsIcon className={NavItem_module.navigationIcon} />}
+                    className={NavItem_module.listItems}
+                />
+                <NavItem
+                    title={'Podcasts'}
+                    icon={<NavigationPodcastsIcon className={NavItem_module.navigationIcon} />}
+                    className={NavItem_module.listItems}
+                />
             </div>
         </div>
     );

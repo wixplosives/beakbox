@@ -7,6 +7,7 @@
   align-items: center;
   color: #898989;
   cursor: pointer;
+  user-select: none;
 }
 .selectedItem {
   color: $white;
@@ -24,7 +25,11 @@
   background-clip: border-box;
   box-shadow: inset -6px 0 #1db954;
 }
-.navBarIcon {
+.navigationIcon {
   margin-left: 12px;
   margin-right: 16px;
+}
+
+.selectedIcon {
+  color: #1DB954;
 }
