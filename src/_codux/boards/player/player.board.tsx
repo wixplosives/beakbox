@@ -1,12 +1,13 @@
 import { createBoard } from '@wixc3/react-board';
-import { A } from '../../../components/player/player';
-import Heart from '../../../assets/heart.svg?react';
+import { Player } from '../../../components/player/player';
 
 export default createBoard({
     name: 'Player',
-    Board: () => <A icon={<Heart />} />,
+    Board: () => <Player />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 493,
+        canvasWidth: 1321.9161676646706,
+        canvasHeight: 112,
+        windowWidth: 1445,
     },
 });
