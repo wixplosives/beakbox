@@ -1,0 +1,10 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+  background-color: $gray;
+  border-radius: 16px;
+}
+.inner {
+  height: 100%;
+  background-color: $primary300;
+  border-radius: 16px;
+}

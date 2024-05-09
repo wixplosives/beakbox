@@ -6,8 +6,9 @@ export default createBoard({
     Board: () => <Player />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 1321.9161676646706,
+        canvasWidth: 1320,
         canvasHeight: 112,
         windowWidth: 1445,
+        windowBackgroundColor: '#615662',
     },
 });
