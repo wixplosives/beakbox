@@ -3,9 +3,10 @@
 .root {
   background-color: $gray;
   border-radius: 16px;
+  background: $gray;
 }
 .inner {
   height: 100%;
-  background-color: $primary300;
   border-radius: 16px;
+  background: $primary300;
 }

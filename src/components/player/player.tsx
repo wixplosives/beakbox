@@ -10,6 +10,7 @@ import Repeat from '../../assets/repeat.svg?react';
 import { ProgressBar } from '../progress-bar/progress-bar';
 import Heart from '../../assets/heart.svg?react';
 import EighteesDuckWebp from '../../assets/sample-images/eightees-duck.webp';
+import Volume from '../../assets/volume.svg?react';
 
 export interface PlayerProps {
     className?: string;
@@ -18,13 +19,13 @@ export interface PlayerProps {
 export const Player = ({ className }: PlayerProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <ProgressBar progress={30} className={styles.progress} />
+            <ProgressBar progress={80} className={styles.progress} />
             <div className={styles.main}>
                 <div className={styles.currentlyPlaying}>
                     <img src={EighteesDuckWebp} className={styles.thumbnail} />
                     <span className={styles.playingSong}>
                         <h2 className={styles.title}>Quack</h2>
-                        <h4 className={styles.artistName}>Cool Duck</h4>
+                        <h4 className={styles.artistName}>DJ DuckFace</h4>
                     </span>
                     <Heart className={styles.icon} />
                 </div>
@@ -36,8 +37,11 @@ export const Player = ({ className }: PlayerProps) => {
                     <Repeat />
                 </div>
                 <div className={styles.playingStatus}>
-                    <span>1:45 / 4:42</span>
-                    <ProgressBar progress={50} className={styles.volumeBar} />
+                    <span className={styles.time}>1:45 / 4:42</span>
+                    <div className={styles.volumeControl}>
+                        <Volume />
+                        <ProgressBar progress={50} className={styles.volumeBar} />
+                    </div>
                     <MusicFilter />
                 </div>
             </div>
