@@ -28,7 +28,7 @@ export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
                 })}
             >
                 {Icon}
-            </div>{' '}
+            </div>
             {title}
         </div>
     );
