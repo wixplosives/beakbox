@@ -12,7 +12,7 @@ export interface BannerArtistProps {
  */
 export const BannerArtist = ({ className }: BannerArtistProps) => {
     return (
-        <div className={classNames(styles.root, className, styles.banner)}>
+        <div className={classNames(styles.root, className, styles.banner, styles.layout)}>
             <img src={ImagePng} />
             BannerArtist
         </div>
