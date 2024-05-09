@@ -1,0 +1,12 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+}
+.Button {
+  background: $primary300;
+  border-radius: 24px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+  color: $white;
+}
