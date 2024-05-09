@@ -3,6 +3,11 @@ import { Button } from '../../../components/button/button';
 
 export default createBoard({
     name: 'Button - primary ',
-    Board: () => <Button />,
+    Board: () => (
+        <Button className="Button" title="plsy">
+            {' '}
+            Play
+        </Button>
+    ),
     isSnippet: true,
 });
