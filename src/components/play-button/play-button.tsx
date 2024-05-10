@@ -11,4 +11,4 @@ export interface PlayButtonProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const PlayButton = ({ className }: PlayButtonProps) => <Toggle on={play} off={pause} className={className}/>
+export const PlayButton = ({ className }: PlayButtonProps) => <Toggle on={play} off={pause} className={classNames(className, styles.root, 'play')}/>

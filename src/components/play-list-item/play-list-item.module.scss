@@ -1,6 +1,11 @@
+@import '../../styles/common/variables.module.scss';
 .root {
-    display: flex;
-    flex-flow: row nowrap; 
-    justify-content: space-between;
-    width: 100%;
+  display: grid;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 10fr 5fr 5fr 3fr 1fr;
+  color: $primary100;
+  background-color: $black;
 }
