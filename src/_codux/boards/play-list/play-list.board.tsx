@@ -44,6 +44,7 @@ export default createBoard({
     Board: () => <PlayList title="Popular Songs" songs={songs} playing={songs[3]} />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 661,
+        canvasWidth: 931,
+        canvasBackgroundColor: '#121212',
     },
 });

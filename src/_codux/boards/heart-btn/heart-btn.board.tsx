@@ -3,7 +3,7 @@ import { HeartBtn } from '../../../components/heart-btn/heart-btn';
 
 export default createBoard({
     name: 'HeartBtn',
-    Board: () => <HeartBtn />,
+    Board: () => <HeartBtn liked={true}/>,
     isSnippet: true,
     environmentProps: {
         canvasWidth: 87,

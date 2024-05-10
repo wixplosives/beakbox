@@ -1,11 +1,48 @@
 @import '../../styles/common/variables.module.scss';
 .root {
+  padding: 1em;
   display: grid;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 100%;
   grid-auto-flow: column;
   grid-template-columns: 2fr 10fr 5fr 5fr 3fr 1fr;
   color: $primary100;
-  background-color: $black;
+}
+
+.playing {
+  position: relative;
+  background: repeat padding-box border-box 0% 0% / auto auto scroll
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.12) 35.43%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.playing::before,
+.playing::after {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 0px;
+  content: '';
+}
+
+.playing::before {
+  bottom: 0;
+  border-bottom: 1px solid #65656544;
+}
+
+.playing::after {
+  top: 0;
+  border-top: 1px solid #65656544;
+}
+.icon {
+  position: relative;
+  top: 3px;
+  margin-top: 0em;
+  margin-right: 1em;
+  margin-bottom: 0em;
+  margin-left: 0em;
 }
