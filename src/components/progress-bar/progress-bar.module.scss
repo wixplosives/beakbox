@@ -1,0 +1,12 @@
+@import '../../styles/common/theme.module.scss';
+@import '../../styles/common/variables.module.scss';
+.root {
+  background-color: $gray;
+  border-radius: 16px;
+  background: $gray;
+}
+.inner {
+  height: 100%;
+  border-radius: 16px;
+  background: $primary300;
+}
