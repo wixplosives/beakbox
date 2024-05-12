@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './listeners.module.scss';
-import Icon from '../../assets/Icon.svg';
+import Icon from '../../assets/Icon.svg?react';
 
 export interface ListenersProps {
     className?: string;
