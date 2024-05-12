@@ -1,8 +1,6 @@
 @import '../../styles/common/variables.module.scss';
 .root {
   height: 100%;
-  background-color: $primary200;
-  background: #1db954;
 }
 
 .main {
@@ -13,9 +11,9 @@
   padding-top: 0px;
   padding: 0px 32px;
   align-items: center;
-  background-color: $black;
   color: $white;
   gap: 48px;
+  background-color: rgba(18, 18, 18, 0.64);
 }
 .currentlyPlaying {
   display: flex;
