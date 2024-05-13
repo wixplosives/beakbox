@@ -24,4 +24,9 @@
   color: $primary300;
   padding: 0.2em;
   font-weight: 600;
+  background: rgba(18, 18, 18, 0);
+  border: 0px solid rgb(100, 108, 255);
+  &:hover {
+    text-decoration-line: underline;
+  }
 }
