@@ -4,7 +4,7 @@ import { Button } from '../../../components/button/button';
 export default createBoard({
     name: 'Button - primary ',
     Board: () => (
-        <Button className="Button" title="Play">
+        <Button title="Play">
             Play
         </Button>
     ),
