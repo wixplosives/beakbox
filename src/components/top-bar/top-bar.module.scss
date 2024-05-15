@@ -1,0 +1,21 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+  display: flex;
+  align-content: center;
+}
+.overideNativeButton {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+.topBarBackButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #212121;
+  margin-right: 24px;
+}
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+}
