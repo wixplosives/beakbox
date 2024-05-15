@@ -1,7 +1,7 @@
 @import '../../styles/common/theme.module.scss';
 
 .listItems {
-  height: 24px;
+  height: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,8 +9,6 @@
   cursor: pointer;
   user-select: none;
   font-family: $my-prettyfont;
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 .selectedItem {
   color: $white;
