@@ -2,6 +2,8 @@
 .root {
   display: flex;
   align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .overideNativeButton {
   background-color: unset;
@@ -18,4 +20,6 @@
 .buttonIcon {
   width: 20px;
   height: 20px;
+  margin: auto;
+  display: block;
 }

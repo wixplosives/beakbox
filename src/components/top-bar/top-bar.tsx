@@ -3,7 +3,8 @@ import styles from './top-bar.module.scss';
 import TopbarBackButton from '../../assets/topbar-back-button.svg?react';
 import { TopBarBreadcrumb } from '../top-bar-breadcrumb/top-bar-breadcrumb';
 import { Search } from '../search/search';
-import NavigationHomeIcon from '../../assets/navigation-home-icon.svg?react';
+import topbarNotificationIcon from '../../assets/topbar-notification-icon.svg?react';
+import TopbarNotificationIcon from '../../assets/topbar-notification-icon.svg?react';
 
 export interface TopBarProps {
     className?: string;
@@ -23,7 +24,7 @@ export const TopBar = ({ className }: TopBarProps) => {
             <TopBarBreadcrumb />
             <Search />
             <button className={classNames(styles.overideNativeButton, styles.topBarBackButton)}>
-                <NavigationHomeIcon className={styles.buttonIcon}/>
+                <TopbarNotificationIcon className={styles.buttonIcon} />
             </button>
         </div>
     );
