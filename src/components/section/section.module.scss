@@ -1,0 +1,26 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sectionTop {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.sectionHeader {
+  color: $white;
+  font-size: 20px;
+  margin: 0px;
+}
+.sectionButton {
+  color: $primary300;
+  font-weight: 600;
+  font-size: 16px;
+}
+.cardsLayout {
+  display: flex;
+  gap: 20px;
+}
