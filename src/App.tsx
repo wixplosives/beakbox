@@ -2,6 +2,7 @@ import styles from './App.module.scss';
 import { Navigation } from './components/navigation/navigation';
 import { Player } from './components/player/player';
 import { PlayList } from './components/play-list/play-list';
+import { TopBar } from './components/top-bar/top-bar';
 
 const songs = [
     {
@@ -40,11 +41,20 @@ const songs = [
         cover: '',
     },
 ];
+
 function App() {
     return (
         <div className={styles.App}>
-            <Navigation />
-            <PlayList title="Popular Songs" songs={songs} playing={songs[3]} />
+            <Navigation className={styles.navigation} />
+            <main className={styles.main}>
+                <TopBar className={styles.topbar} />
+                <PlayList
+                    title="Popular Songs"
+                    songs={songs}
+                    playing={songs[3]}
+                    className={styles.playlist}
+                />
+            </main>
             <Player className={styles.player} />
         </div>
     );
