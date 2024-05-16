@@ -3,13 +3,14 @@
 
 .listItem {
   display: flex;
-  flex-direction: row;
   align-items: center;
   color: #898989;
   cursor: pointer;
   user-select: none;
   font-family: $my-prettyfont;
   height: 48px;
+  gap: 6px;
+  padding: 0px 32px;
 }
 .selectedItem {
   color: $white;
@@ -19,10 +20,6 @@
     rgba(255, 255, 255, 0.06) 100%
   );
   box-shadow: inset -6px 0 $primary300;
-}
-.navigationIcon {
-  margin-left: 12px;
-  margin-right: 16px;
 }
 
 .selectedIcon {

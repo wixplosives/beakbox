@@ -7,14 +7,10 @@ export interface NavItemProps {
     icon?: React.ReactNode;
     title: string;
     selected?: boolean;
+    onSelect?: (title: string) => void;
 }
 
-export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
-    const [selected, setSelected] = useState(false);
-
-    const handleClick = () => {
-        setSelected(!selected);
-    };
+export const NavItem = ({ className, icon: Icon, title, selected, onSelect }: NavItemProps) => {
     return (
         <li
             className={classNames(
@@ -22,9 +18,9 @@ export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
                 {
                     [styles.selectedItem]: selected,
                 },
-                styles.listItem,
+                styles.listItem
             )}
-            onClick={handleClick}
+            onClick={() => onSelect?.(title)}
         >
             <div
                 className={classNames(styles.icon, {
