@@ -1,0 +1,20 @@
+@import '../../styles/common/theme.module.scss';
+@import '../../styles/common/variables.module.scss';
+.root {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.upperScopeName {
+  color: #7f7f7f;
+}
+.breadCrumbChevron {
+  transform: scaleX(-1);
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+.currentScope {
+  color: $white;
+}

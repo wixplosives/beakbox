@@ -5,7 +5,4 @@ export default createBoard({
     name: 'Navigation',
     Board: () => <Navigation />,
     isSnippet: true,
-    environmentProps: {
-        windowWidth: 986,
-    },
 });

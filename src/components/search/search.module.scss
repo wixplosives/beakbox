@@ -1,0 +1,25 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+  width: 386px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background-color: $black;
+}
+.searchInput {
+  width: 318px;
+  height: 48px;
+  padding: 0px;
+  background-color: unset;
+  border: 0;
+  color: $white;
+  outline: none;
+  font-size: 16px;
+}
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  margin-left: 16px;
+}
