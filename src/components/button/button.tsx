@@ -6,8 +6,9 @@ export interface ButtonProps {
     className?: string;
     title: string;
     children?: React.ReactNode;
+    type?: 'button' | 'text' | 'outline';
 }
 
-export const Button = ({ className, title }: ButtonProps) => {
-    return <button className={classNames(styles.root, className, styles.Text)}>{title}</button>;
+export const Button = ({ className, title, children, type = 'button' }: ButtonProps) => {
+    return <button className={classNames(styles.root, className, styles[type])}>{children}</button>;
 };
