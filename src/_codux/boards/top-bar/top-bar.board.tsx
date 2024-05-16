@@ -6,7 +6,7 @@ export default createBoard({
     Board: () => <TopBar />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 920.8059376112717,
+        canvasWidth: 901,
         canvasHeight: 48,
         windowBackgroundColor: '#000000',
     },

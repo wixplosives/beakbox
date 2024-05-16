@@ -5,9 +5,5 @@ export default createBoard({
     name: 'Search',
     Board: () => <Search />,
     isSnippet: true,
-    environmentProps: {
-        canvasWidth: 167,
-        windowBackgroundColor: '#000000',
-        canvasHeight: 180,
-    },
+    environmentProps: { windowBackgroundColor: '#000000' },
 });

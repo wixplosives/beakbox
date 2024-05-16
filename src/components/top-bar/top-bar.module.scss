@@ -1,9 +1,8 @@
 @import '../../styles/common/variables.module.scss';
 .root {
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  gap: 24px;
+  justify-content: space-between;
 }
 .overideNativeButton {
   background-color: unset;
@@ -14,12 +13,21 @@
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background-color: #212121;
-  margin-right: 24px;
+  background-color: $black;
 }
 .buttonIcon {
   width: 20px;
   height: 20px;
   margin: auto;
   display: block;
+}
+.search {
+}
+.left {
+  display: flex;
+  gap: 24px;
+}
+.right {
+  display: flex;
+  gap: 24px;
 }

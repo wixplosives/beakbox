@@ -18,14 +18,18 @@ export interface TopBarProps {
 export const TopBar = ({ className }: TopBarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <button className={classNames(styles.overideNativeButton, styles.topBarBackButton)}>
-                <TopbarBackButton className={styles.buttonIcon} />
-            </button>
-            <TopBarBreadcrumb />
-            <Search />
-            <button className={classNames(styles.overideNativeButton, styles.topBarBackButton)}>
-                <TopbarNotificationIcon className={styles.buttonIcon} />
-            </button>
+            <div className={styles.left}>
+                <button className={classNames(styles.overideNativeButton, styles.topBarBackButton)}>
+                    <TopbarBackButton className={styles.buttonIcon} />
+                </button>
+                <TopBarBreadcrumb />
+            </div>
+            <div className={styles.right}>
+                <Search className={styles.search} />
+                <button className={classNames(styles.overideNativeButton, styles.topBarBackButton)}>
+                    <TopbarNotificationIcon className={styles.buttonIcon} />
+                </button>
+            </div>
         </div>
     );
 };
