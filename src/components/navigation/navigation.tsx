@@ -12,54 +12,36 @@ import NavigationFavoriteIcon from '../../assets/navigation-favorite-icon.svg?re
 import NavigationLocalIcon from '../../assets/navigation-local-icon.svg?react';
 import NavigationAddplaylistIcon from '../../assets/navigation-addplaylist-icon.svg?react';
 import NavigationPlaylistIcon from '../../assets/navigation-playlist-icon.svg?react';
+import { NavigationSection } from '../../types';
+import { useContext } from 'react';
+import { AppContext } from '../app-context';
 
-export interface navigationProps {
+export interface NavigationProps {
     className?: string;
+    sections: NavigationSection[];
 }
 
-export const Navigation = ({ className }: navigationProps) => {
+export const Navigation = ({ className, sections }: NavigationProps) => {
+    const { selectSection, selectedSection } = useContext(AppContext);
     return (
         <div className={classNames(styles.root, className, styles.navigation)}>
             <div className={styles.logoContainer}>
                 <Beakboxlogo className={styles.beakBoxLogo} />
             </div>
-            <ul className={styles.menu}>
-                <NavItem
-                    title={'Home'}
-                    icon={<NavigationHomeIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Discover'}
-                    icon={<NavigationDiscoverIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Radio'}
-                    icon={<NavigationRadioIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Albums'}
-                    icon={<NavigationAlbumsIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Podcasts'}
-                    icon={<NavigationPodcastsIcon className={styles.navigationIcon} />}
-                />
-            </ul>
-            <ul className={styles.menu}>
-                <div className={styles.menuTitle}>Library</div>
-                <NavItem
-                    title={'Recently Added'}
-                    icon={<NavigationRecentlyIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Favorite Songs'}
-                    icon={<NavigationFavoriteIcon className={styles.navigationIcon} />}
-                />
-                <NavItem
-                    title={'Local Files'}
-                    icon={<NavigationLocalIcon className={styles.navigationIcon} />}
-                />
-            </ul>
+            {sections.map((section) => (
+                <ul key={section.name} className={styles.menu}>
+                    {section.name && <div className={styles.menuTitle}>{section.name}</div>}
+                    {section.items.map((item) => (
+                        <NavItem
+                            selected={item.title === selectedSection}
+                            key={item.title}
+                            title={item.title}
+                            icon={item.icon}
+                            onSelect={selectSection}
+                        />
+                    ))}
+                </ul>
+            ))}
             <ul className={styles.menu}>
                 <div className={styles.menuTitle}>
                     Playlist
