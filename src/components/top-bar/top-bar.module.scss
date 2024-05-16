@@ -1,0 +1,33 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.overideNativeButton {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+.topBarBackButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: $black;
+}
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: block;
+}
+.search {
+}
+.left {
+  display: flex;
+  gap: 24px;
+}
+.right {
+  display: flex;
+  gap: 24px;
+}
