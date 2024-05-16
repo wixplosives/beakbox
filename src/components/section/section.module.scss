@@ -1,2 +1,19 @@
+@import '../../styles/common/variables.module.scss';
 .root {
+}
+.sectionTop {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.sectionHeader {
+  color: $white;
+  font-size: 20px;
+  line-height: 30px;
+}
+.sectionButton {
+  color: $primary300;
+  font-weight: 600;
+  font-size: 16px;
 }

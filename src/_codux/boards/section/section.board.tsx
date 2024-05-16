@@ -5,4 +5,8 @@ export default createBoard({
     name: 'Section',
     Board: () => <Section title="Popular Releases" buttonText="See All" />,
     isSnippet: true,
+    environmentProps: {
+        canvasWidth: 907,
+        windowBackgroundColor: '#000000',
+    },
 });
