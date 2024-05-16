@@ -16,10 +16,14 @@ export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
         setSelected(!selected);
     };
     return (
-        <div
-            className={classNames(className, {
-                [styles.selectedItem]: selected,
-            })}
+        <li
+            className={classNames(
+                className,
+                {
+                    [styles.selectedItem]: selected,
+                },
+                styles.listItem,
+            )}
             onClick={handleClick}
         >
             <div
@@ -30,6 +34,6 @@ export const NavItem = ({ className, icon: Icon, title }: NavItemProps) => {
                 {Icon}
             </div>
             {title}
-        </div>
+        </li>
     );
 };

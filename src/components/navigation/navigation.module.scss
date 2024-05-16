@@ -4,16 +4,17 @@
 }
 .navigation {
   width: 270px;
-  height: 1024px;
+  height: 100%;
   background-color: #212121;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 40px;
 }
 .logoContainer {
   display: flex;
-  height: 80px;
-  margin-bottom: 12px;
+  height: 48px;
+  padding-top: 32px;
+  padding-left: 32px;
 }
 .logo {
   width: 100px;
@@ -22,20 +23,12 @@
 .beakBoxLogo {
   width: 123px;
   height: 48px;
-  margin-top: 32px;
-  margin-left: 32px;
 }
 .navigationIcon {
   margin-left: 12px;
   margin-right: 16px;
 }
-.listItems {
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #898989;
-}
+
 .selectedItem {
   color: $white;
   background-image: linear-gradient(
@@ -43,13 +36,6 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.06) 100%
   );
-  background-color: transparent;
-  background-position: 0%;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
   box-shadow: inset -6px 0 #1db954;
 }
 .menuTitle {
@@ -70,4 +56,8 @@
   margin-right: 32px;
   border: none;
   cursor: pointer;
+}
+.menu {
+  margin: 0px;
+  padding: 0px;
 }
