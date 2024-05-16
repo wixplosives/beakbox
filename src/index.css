@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-* {
-   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   font-family: "Manrope", sans-serif;
   line-height: 1.5;
@@ -40,3 +34,11 @@ h1 {
   line-height: 1.1;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
