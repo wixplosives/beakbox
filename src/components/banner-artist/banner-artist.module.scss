@@ -11,4 +11,11 @@
   background-attachment: scroll;
 }
 .layout {
+  display: flex;
+  padding: 18px 40px 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 40px;
+  border-radius: 16px;
 }

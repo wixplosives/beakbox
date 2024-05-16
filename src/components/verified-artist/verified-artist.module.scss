@@ -1,0 +1,16 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.label {
+  color: $gray;
+}
