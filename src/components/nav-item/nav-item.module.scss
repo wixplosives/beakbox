@@ -1,7 +1,7 @@
+@import '../../styles/common/variables.module.scss';
 @import '../../styles/common/theme.module.scss';
 
-.listItems {
-  height: 48px;
+.listItem {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,6 +9,7 @@
   cursor: pointer;
   user-select: none;
   font-family: $my-prettyfont;
+  height: 48px;
 }
 .selectedItem {
   color: $white;
@@ -17,14 +18,7 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.06) 100%
   );
-  background-color: transparent;
-  background-position: 0%;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
-  box-shadow: inset -6px 0 #1db954;
+  box-shadow: inset -6px 0 $primary300;
 }
 .navigationIcon {
   margin-left: 12px;
@@ -32,5 +26,5 @@
 }
 
 .selectedIcon {
-  color: #1db954;
+  color: $primary300;
 }

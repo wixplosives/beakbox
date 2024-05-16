@@ -1,14 +1,20 @@
+@import '../../styles/common/variables.module.scss';
 @import '../../styles/common/theme.module.scss';
 .root {
 }
 .navigation {
   width: 270px;
-  height: 1024px;
+  height: 100%;
   background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .logoContainer {
-  height: 120px;
   display: flex;
+  height: 48px;
+  padding-top: 32px;
+  padding-left: 32px;
 }
 .logo {
   width: 100px;
@@ -17,20 +23,12 @@
 .beakBoxLogo {
   width: 123px;
   height: 48px;
-  margin-top: 32px;
-  margin-left: 32px;
 }
 .navigationIcon {
   margin-left: 12px;
   margin-right: 16px;
 }
-.listItems {
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #898989;
-}
+
 .selectedItem {
   color: $white;
   background-image: linear-gradient(
@@ -38,12 +36,28 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.06) 100%
   );
-  background-color: transparent;
-  background-position: 0%;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
   box-shadow: inset -6px 0 #1db954;
+}
+.menuTitle {
+  color: #949494;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+  line-height: $size16;
+  display: flex;
+  justify-content: space-between;
+}
+.addPlaylistButton {
+  background-color: unset;
+  width: 16px;
+  height: 16px;
+  margin-right: 32px;
+  border: none;
+  cursor: pointer;
+}
+.menu {
+  margin: 0px;
+  padding: 0px;
 }
