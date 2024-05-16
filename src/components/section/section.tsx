@@ -6,13 +6,9 @@ export interface SectionProps {
     className?: string;
     title?: string;
     buttonText: string;
-    children: JSX.Element;
+    children: React.ReactNode;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
 export const Section = ({ className, title, buttonText, children }: SectionProps) => {
     return (
         <div className={classNames(styles.root, className)}>
@@ -20,7 +16,7 @@ export const Section = ({ className, title, buttonText, children }: SectionProps
                 <h1 className={styles.sectionHeader}>{title}</h1>
                 <button className={styles.sectionButton}>{buttonText}</button>
             </div>
-            {children}
+            <div className={styles.cardsLayout}>{children}</div>
         </div>
     );
 };

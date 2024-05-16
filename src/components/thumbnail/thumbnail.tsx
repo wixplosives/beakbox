@@ -8,8 +8,6 @@ export interface ThumbnailProps {
 
 export const Thumbnail = ({ className, imageUrl }: ThumbnailProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <img src={imageUrl} className={styles.thumbnail} />
-        </div>
+            <img src={imageUrl} className={classNames(styles.thumbnail, className)} />
     );
 };
