@@ -9,6 +9,6 @@ export interface ButtonProps {
     type?: 'button' | 'text' | 'outline';
 }
 
-export const Button = ({ className, title, children, type = 'button' }: ButtonProps) => {
-    return <button className={classNames(styles.root, className, styles[type])}>{children}</button>;
+export const Button = ({ className, title, type = 'button' }: ButtonProps) => {
+    return <button className={classNames(styles.root, className, styles[type])}>{title}</button>;
 };

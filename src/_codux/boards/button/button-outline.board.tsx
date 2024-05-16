@@ -1,13 +1,11 @@
 import { createBoard } from '@wixc3/react-board';
 import { Button } from '../../../components/button/button';
-import ThickIcon from '../../../assets/Thick Icon.svg';
 
 export default createBoard({
     name: 'Button - Outline',
     Board: () => (
         <Button title="outline" type="outline">
-            <ThickIcon />
-            play
+            Play
         </Button>
     ),
     isSnippet: true,
