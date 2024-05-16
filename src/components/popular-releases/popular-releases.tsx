@@ -22,6 +22,7 @@ export const PopularReleases = ({ className, popularData }: PopularReleasesProps
                 children={popularData?.map(function (data) {
                     return <Card {...data} />;
                 })}
+                
             />
         </div>
     );
