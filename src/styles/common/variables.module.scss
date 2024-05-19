@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
 
+$primaryfont: Manrope
 $sectionTitle: normal 700 16px / normal DM Sans, sans-serif;
 $cardTitle: normal 700 16px / normal DM Sans, sans-serif;
 $cardText: normal 400 12px / normal DM Sans, sans-serif;
@@ -13,6 +14,8 @@ $primary200: #b9e9ca;
 $primary300: #1db954;
 $white: #fff;
 $gray: #dedede;
+$gray2: #949494; //example - texts in the left menu
+$gray3: #212121; //topbar button background
 $black: #121212;
 
 $size2: 2px;
@@ -20,7 +23,11 @@ $size4: 4px;
 $size6: 6px;
 $size8: 8px;
 $size12: 12px;
+$size14: 14px;
 $size16: 16px;
+$size18: 18px;
 $size24: 24px;
 $size32: 32px;
 $size40: 40px;
+$size48: 48px;
+$size54: 54px;
