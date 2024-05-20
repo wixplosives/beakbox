@@ -5,5 +5,8 @@ export default createBoard({
     name: 'RightSidebar',
     Board: () => <RightSidebar />,
     isSnippet: true,
-    environmentProps: { canvasWidth: 350 },
+    environmentProps: {
+        canvasWidth: 350,
+        windowHeight: 550,
+    },
 });
