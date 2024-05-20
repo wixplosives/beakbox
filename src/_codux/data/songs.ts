@@ -1,12 +1,17 @@
 export const songs = [
     {
+        artist: 'Caravan Palace',
+        title: 'Mirrors',
+        image: '/src/assets/album-covers/caravan-palace-mirrors.gif',
+    },
+    {
         artist: 'Siamés',
         title: 'My Way',
         image: '/src/assets/album-covers/siames-my-way.jpg',
     },
     {
         artist: 'Lorn',
-        title: 'The Maze to Nowhere',
+        title: 'Anvil',
         image: '/src/assets/album-covers/lorn-vessel.jpg',
     },
     {
