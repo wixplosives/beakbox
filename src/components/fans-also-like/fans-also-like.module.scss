@@ -3,11 +3,36 @@
   flex-direction: column;
 }
 
-.image {
-  max-width: 100%;
+.item {
+  display: grid;
   margin-top: 16px;
-  aspect-ratio: 1;
-  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.image {
+  grid-area: 1 / 1;
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+}
+
+.titleAndArtist {
+  grid-area: 1 / 1;
+  align-self: end;
+  padding: 16px;
+  background: #121212A3;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 12px;
+  color: #bbb;
 }

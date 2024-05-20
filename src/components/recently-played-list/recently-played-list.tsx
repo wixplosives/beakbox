@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from './recently-played-list.module.scss';
-import { RecentlyPlayedItem } from '../recently-played-item/recently-played-item';
 import { HeaderWithLink } from '../header-with-link/header-with-link';
 
 export interface RecentlyPlayedListProps {
