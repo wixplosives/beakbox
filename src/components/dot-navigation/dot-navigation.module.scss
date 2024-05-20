@@ -1,0 +1,19 @@
+.root {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff6;
+    cursor: pointer;
+}
+
+.dot.selected {
+    background: #fff;
+    cursor: default;
+}
