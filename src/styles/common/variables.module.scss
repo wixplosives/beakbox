@@ -1,34 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-$primaryfont: "Manrope", sans-serif;
-$sectionTitle: normal 700 16px / normal DM Sans, sans-serif;
-$cardTitle: normal 700 16px / normal DM Sans, sans-serif;
-$cardText: normal 400 12px / normal DM Sans, sans-serif;
+$font: "Manrope", sans-serif;
+$hugeTitle: 700 50px / 150% "Manrope", sans-serif;
+$bigTitle: 700 20px / 150% "Manrope", sans-serif;
+$mediumTitle: 700 18px / 150% "Manrope", sans-serif;
+$regularTextLight: 400 16px / normal "Manrope", sans-serif;
+$regularText: 500 16px / normal "Manrope", sans-serif;
+$regularTextBold: 500 14px / normal "Manrope", sans-serif;
+$smallText: 600 14px / normal "Manrope", sans-serif;
+$tinyText: 400 12px / normal "Manrope", sans-serif;
+$tinyTextBold: 700 12px / normal "Manrope", sans-serif;
 
-$noteTitle: normal 700 20px / normal DM Sans, sans-serif;
-$noteText: normal 400 16px / normal DM Sans, sans-serif;
-$navigation: normal 400 14px / normal DM Sans, sans-serif;
 
 $primary100: #ddf5e5;
 $primary200: #b9e9ca;
 $primary300: #1db954;
 $white: #fff;
-$gray: #dedede;
-$gray2: #949494; //example - texts in the left menu
-$gray3: #212121; //topbar button background
+$gray100: #dedede;
+$gray200: #949494; 
+$gray300: #212121;
 $black: #121212;
-
-$size2: 2px;
-$size4: 4px;
-$size6: 6px;
-$size8: 8px;
-$size12: 12px;
-$size14: 14px;
-$size16: 16px;
-$size18: 18px;
-$size24: 24px;
-$size32: 32px;
-$size40: 40px;
-$size48: 48px;
-$size54: 54px;
