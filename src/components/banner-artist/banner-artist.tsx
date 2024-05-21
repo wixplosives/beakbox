@@ -5,6 +5,7 @@ import { DetailBanner } from '../detail-banner/detail-banner';
 
 export interface BannerArtistProps {
     className?: string;
+    ImagePng: string;
 }
 
 /**
@@ -12,7 +13,7 @@ export interface BannerArtistProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 
-export const BannerArtist = ({ className }: BannerArtistProps) => {
+export const BannerArtist = ({ className, ImagePng }: BannerArtistProps) => {
     return (
         <div className={classNames(styles.root, className, styles.banner, styles.layout)}>
             <DetailBanner />
