@@ -17,7 +17,9 @@ export const BannerArtist = ({ className, ImagePng }: BannerArtistProps) => {
     return (
         <div className={classNames(styles.root, className, styles.banner, styles.layout)}>
             <DetailBanner />
-            <img src={ImagePng} />
+            <div className={styles.section}>
+                <img src={ImagePng} />
+            </div>
         </div>
     );
 };
