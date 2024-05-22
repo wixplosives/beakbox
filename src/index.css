@@ -27,6 +27,8 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #121212;
+  color: #FFF;
 }
 
 h1 {
