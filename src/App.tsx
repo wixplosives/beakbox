@@ -13,6 +13,9 @@ import DjDuck from './assets/sample-images/dj-duck.webp';
 import JazzDuck from './assets/sample-images/jazz-duck.webp';
 import CoupleDuck from './assets/sample-images/couple-duck.webp';
 import { PopularReleases } from './components/popular-releases/popular-releases';
+import { FansAlsoLike } from './components/fans-also-like/fans-also-like';
+import { songs } from './_codux/data/songs';
+
 
 const popularReleasesSamples = [
     { imageUrl: ChillDuck, title: 'Anat Marley', subTitleOne: '2420', subTitleTwo: 'Song' },
@@ -40,6 +43,7 @@ function App() {
                     />
                     <PopularReleases popularData={popularReleasesSamples} />
                 </main>
+                <FansAlsoLike items={songs.slice(0, 4)} />
                 <Player className={styles.player} />
             </div>
         </AppContext.Provider>
