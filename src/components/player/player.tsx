@@ -33,6 +33,9 @@ export const Player = ({ className }: PlayerProps) => {
                     <Shuffle />
                     <Backwards />
                     <PauseCircle className={styles.mainAction} />
+                    <audio autoPlay loop>
+                        <source src="./src/assets/quackquack.mp3" type="audio/mpeg"  />
+                    </audio>
                     <Forward />
                     <Repeat />
                 </div>
