@@ -1,0 +1,35 @@
+@import '../../styles/common/variables.module.scss';
+.root {
+}
+
+.button {
+  background: $primary300;
+  border-radius: 24px;
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+  color: $white;
+}
+
+.outline {
+  border: 1px solid $white;
+  border-radius: 24px;
+  background-color: rgba(29, 185, 84, 0);
+  line-height: 120%;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.text {
+  line-height: 120%;
+  color: $primary300;
+  padding: 0.2em;
+  font-weight: 600;
+  background: rgba(18, 18, 18, 0);
+  border: 0px solid rgb(100, 108, 255);
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
